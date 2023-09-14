@@ -1,0 +1,15 @@
+'-e file': This operator checks if the specified file exists. It is often used to verify the presence of a file before attempting to perform operations on it. For example, you might use it to avoid overwriting an existing file.
+'-f file': This operator tests whether the given file is a regular file (not a directory or a special file like a device file). It helps differentiate between files and directories.
+'-d file': It verifies if the specified file is a directory. You can use it to ensure that a given path points to a directory before trying to perform directory-specific operations.
+'-s file': This operator checks if the file has a size greater than zero. It's useful when you want to determine if a file contains data before processing it.
+'-r file': Tests whether the file is readable. You can use this operator to check if a file can be opened and read by the script.
+'-w file': This operator checks if the file is writable. It helps determine if a file can be modified or written to.
+'-x file': This operator verifies if the file is executable. You can use this operator to check if a script or binary file can be executed.
+'-u file': This operator checks if the setuid (Set User ID) permission bit is set on the file. It's used to determine if a file runs with the privileges of its owner when executed.
+'-g file': Tests whether the setgid (Set Group ID) permission bit is set on the file. It's used to determine if a file runs with the privileges of its group when executed.
+'-b file': Tests if the file is a block special file (e.g., a device file for disk drives).
+'-c file': It checks if the file is a character special file (e.g., a device file for terminals or serial ports).
+'file1 -nt file2': This operator tests if "file1" is newer than "file2" by comparing their modification timestamps.
+'file1 -ot file2': It checks if "file1" is older than "file2" by comparing their modification timestamps.
+'-L file': Checks if the file is a symbolic link. It distinguishes symbolic links from regular files.
+'-N file': Tests if the file has been modified since it was last read. It's often used in scenarios where you want to detect changes in a file.
